@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(146, 245, 236);
+            /* display: flex; */
+            /* justify-content: center; */
+        }
+        
+        /* .main{
+            height: 240px;
+            width: 370px;
+            margin-top: 300px;
+            margin-left: 569px;
+            background-color: blueviolet;
+            border: 2px solid black;
+        } */
+        .upper{
+            height: 100px;
+            width: 370px;
+            background-color: rgb(146, 245, 236);
+            display: flex;
+            margin-top: 0;
+            margin-left: 569px;
+            /* margin: 300px auto auto auto; */
+            border: 15px solid white;
+            border-radius: 10px 60px 60px 0 ; 
+            box-shadow: 5px 5px lightblue;  
+        }
+
+        .uinner{
+           height: 100px;
+           width: 300px;
+           background-color: white; 
+           box-shadow: 5px 0 lightblue;
+        }
+
+        .middle{
+            height: 90px;
+            width: 310px;
+            display: flex;
+            margin: 0 auto auto 569px;
+            background-color: white;
+            border-radius: 0 0 100px 100px;
+            box-shadow: 5px 5px lightblue;
+        }
+
+        .lower{
+            height: 20px;
+            width: 300px;
+            background-color: white;
+            margin-left: 570px;
+            border-radius: 0 0 100px 100px;
+            box-shadow: 5px 5px lightblue;
+        }
+
+        .circle{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(246, 234, 234);
+            /* position: absolute; */
+            margin-left: 705px;
+            margin-top: 200px;
+            animation-name: circle;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+            animation-direction: alternate;
+        }
+
+        @keyframes circle{
+            from{
+                opacity: 0.5;
+                height: 60px;
+                width: 60px;
+
+            }
+            to{
+                opacity: 2.5;
+                height: 80px;
+                width: 80px;
+            }
+
+
+
+            /* 0%{
+                opacity: 0.5;
+                background-color: #cccccc ;
+                height: 50px;
+                width: 50px;
+                margin-top: 280px;
+            }
+            25%{
+                opacity: 1;
+                background-color: #d9d9d9;
+                height: 60px;
+                width: 60px;
+                margin-top: 260px;
+            }
+            50%{
+                opacity: 1.5;
+                background-color: #e6e6e6;
+                height: 70px;
+                width: 70px;
+                margin-top: 240px;
+            }
+            75%{
+                opacity: 2;
+                background-color: #f2f2f2;
+                height: 75px;
+                width: 75px;
+                margin-top: 220px;
+            }
+            100%{
+                opacity: 2.5;
+                background-color: #ffffff;
+                height: 80px;
+                width: 80px;
+                margin-top: 200px;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+        <div class="main">
+            <div class="upper">
+             <div class="uinner"></div>
+            </div>
+
+            <div class="middle"> </div>
+
+            <div class="lower"></div>
+         </div>
+</body>
+</html>
